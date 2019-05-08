@@ -10,7 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.tester.corejava</groupId>
-    <artifactId>json.to.pojo</artifactId>
+    <artifactId>thread</artifactId>
 
 
 </project>
