@@ -1,4 +1,5 @@
-package com.singletone.case1;
+package com.singletone.case2;
+
 
 import java.util.concurrent.TimeUnit;
 
