@@ -1,9 +1,10 @@
-package com.builder.case3;
+package com.prototype.case1;
 
-public class Address{
+public class Address {
     private String street;
     private String district;
     private String pin;
+
     public Address(String street, String district, String pin) {
         this.street = street;
         this.district = district;
@@ -32,14 +33,5 @@ public class Address{
 
     public void setPin(String pin) {
         this.pin = pin;
-    }
-
-    @Override
-    public String toString() {
-        return "Address{" +
-                "street='" + street + '\'' +
-                ", district='" + district + '\'' +
-                ", pin='" + pin + '\'' +
-                '}';
     }
 }

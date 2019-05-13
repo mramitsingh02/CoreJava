@@ -1,13 +1,22 @@
-package com.builder.case3;
+package com.prototype.case3;
 
-public class Address{
+import java.io.Serializable;
+
+public class Address implements Serializable {
     private String street;
     private String district;
     private String pin;
+
     public Address(String street, String district, String pin) {
         this.street = street;
         this.district = district;
         this.pin = pin;
+    }
+
+    public Address(Address address) {
+        this.street = address.street;
+        this.district = address.district;
+        this. pin =address.pin;
     }
 
     public String getStreet() {

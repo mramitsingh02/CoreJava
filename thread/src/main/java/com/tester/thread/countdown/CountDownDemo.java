@@ -8,9 +8,8 @@ public class CountDownDemo {
 
     public static void main(String[] args) throws InterruptedException {
         CountDownLatch countDownLatch = new CountDownLatch(4);
-      /*  CyclicBarrier cyclicBarrier = new CyclicBarrier(10);
-        cyclicBarrier.reset();
-*/
+        new Thread(new MyRunnable(countDownLatch)).start();
+        new Thread(new MyRunnable(countDownLatch)).start();
         new Thread(new MyRunnable(countDownLatch)).start();
         new Thread(new MyRunnable(countDownLatch)).start();
         countDownLatch.await(10l, TimeUnit.SECONDS);
