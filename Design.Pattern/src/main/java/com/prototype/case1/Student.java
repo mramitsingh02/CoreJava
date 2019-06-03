@@ -59,7 +59,14 @@ public class Student implements Cloneable {
 
     @Override
     public Object clone() throws CloneNotSupportedException {
-        Student student = new Student(name.clone(), new Address(address.getStreet(), address.getDistrict(),address.getPin()));
+        Student student = new Student(name.clone(), new Address(address.getStreet(), address.getDistrict(), address.getPin()));
+        student.setListOfPhoneNumber(new ArrayList<>(this.listOfPhoneNumber));
+        student.setListOfMarks(new HashMap<>(this.listOfMarks));
+        return student;
+    }
+
+    public Student copy() {
+        Student student = new Student(name.clone(), new Address(address.getStreet(), address.getDistrict(), address.getPin()));
         student.setListOfPhoneNumber(new ArrayList<>(this.listOfPhoneNumber));
         student.setListOfMarks(new HashMap<>(this.listOfMarks));
         return student;

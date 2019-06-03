@@ -1,4 +1,4 @@
-package com.bridgedesign;
+package com.bridgedesign.case1;
 
 public class BridgeDesignDemo {
     public static void main(String[] args) {

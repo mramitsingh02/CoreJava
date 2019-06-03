@@ -1,4 +1,4 @@
-package com.bridgedesign;
+package com.bridgedesign.case1;
 
 public class Bike extends Vehicle {
     private final Produce produce;

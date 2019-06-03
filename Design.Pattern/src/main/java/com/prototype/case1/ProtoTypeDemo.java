@@ -19,7 +19,7 @@ public class ProtoTypeDemo {
         amitKSingh.setListOfPhoneNumber(list);
         amitKSingh.setListOfMarks(mapOfMarks);
 
-        Student rakesh = (Student) amitKSingh.clone();
+        Student rakesh = (Student) amitKSingh.copy();
         rakesh.getName()[0] ="Rakesh";
         rakesh.getListOfPhoneNumber().remove(1);
 

@@ -1,11 +1,16 @@
-package com.bridgedesign;
+package com.bridgedesign.case2;
+
+import com.google.inject.Inject;
 
 public abstract class Vehicle {
-    private WorkShop workShop1;
-    private WorkShop workShop2;
+    protected WorkShop workShop1;
+    protected WorkShop workShop2;
+
+    @Inject
     public Vehicle(WorkShop workShop1, WorkShop workShop2) {
         this.workShop1 = workShop1;
         this.workShop2 = workShop2;
     }
+
     public abstract void manufacture();
 }

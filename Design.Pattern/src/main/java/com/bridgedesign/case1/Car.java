@@ -1,4 +1,4 @@
-package com.bridgedesign;
+package com.bridgedesign.case1;
 
 public class Car extends Vehicle {
     private final WorkShop produce;

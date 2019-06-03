@@ -8,6 +8,8 @@
         <module>Serilization</module>
         <module>Design.Pattern</module>
         <module>Java8</module>
+        <module>Collections</module>
+        <module>Guice.Inject</module>
     </modules>
     <groupId>com.tester.corejava</groupId>
     <artifactId>CoreJava</artifactId>
@@ -27,6 +29,13 @@
             <artifactId>jsoup</artifactId>
             <version>1.11.3</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/com.google.inject/guice -->
+        <dependency>
+            <groupId>com.google.inject</groupId>
+            <artifactId>guice</artifactId>
+            <version>4.0</version>
+        </dependency>
+
     </dependencies>
 
     <build>

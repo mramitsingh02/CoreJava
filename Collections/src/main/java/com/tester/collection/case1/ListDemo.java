@@ -1,4 +1,4 @@
-package com.tester.collection;
+package com.tester.collection.case1;
 
 import java.util.ArrayList;
 import java.util.List;
