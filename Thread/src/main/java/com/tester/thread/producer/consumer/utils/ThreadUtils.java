@@ -3,6 +3,22 @@ package com.tester.thread.producer.consumer.utils;
 import java.util.concurrent.TimeUnit;
 
 public enum ThreadUtils {
+
+    ONE_MICRO_SECOND{
+        @Override
+        public void sleep() {
+            _microsecond(1);
+        }
+    },
+    TWO_MICRO_SECOND{
+        @Override
+        public void sleep() {
+            _microsecond(2);
+        }
+    }
+
+    ,
+
     ONE_SECOND {
         @Override
         public void sleep() {
@@ -71,6 +87,14 @@ public enum ThreadUtils {
             e.printStackTrace();
         }
     }
+    protected void _microsecond(int unit) {
+        try {
+            TimeUnit.MICROSECONDS.sleep(unit);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+
 
     protected void _minute(int unit) {
         try {

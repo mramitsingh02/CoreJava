@@ -11,6 +11,7 @@
         <module>Collections</module>
         <module>Guice.Inject</module>
         <module>Jool</module>
+        <module>DataSturcture</module>
     </modules>
     <groupId>com.tester.corejava</groupId>
     <artifactId>CoreJava</artifactId>
