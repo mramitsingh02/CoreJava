@@ -12,6 +12,7 @@
         <module>Guice.Inject</module>
         <module>Jool</module>
         <module>DataSturcture</module>
+        <module>Annotation</module>
     </modules>
     <groupId>com.tester.corejava</groupId>
     <artifactId>CoreJava</artifactId>
@@ -43,6 +44,12 @@
             <artifactId>jool</artifactId>
             <version>0.9.12</version>
         </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.8</version>
+        </dependency>
+
 
     </dependencies>
 

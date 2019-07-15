@@ -20,10 +20,12 @@ public class InventoryProblem {
         deleteFormInvertoryThread.join();
         inventory.showItems();
 
+
+
     }
 
     public static class Inventory {
-        private volatile int item;
+        private int item;
 
         public  void increment() {
             item++;
@@ -70,8 +72,6 @@ public class InventoryProblem {
 
         @Override
         public void run() {
-
-
             IntStream.range(1, 101).forEach((x) -> {
                 inventory.decrement();
                 ThreadUtils.ONE_MICRO_SECOND.sleep();

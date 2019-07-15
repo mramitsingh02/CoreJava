@@ -1,4 +1,4 @@
-package com.tester.collection.case1;
+package com.tester.collection.list.case1;
 
 /**
  * Hello world!
