@@ -1,7 +1,7 @@
-package com.tester.corejava.datastucture.linkedlist;
+package com.tester.corejava.datastucture.linkedlis;
 
-import com.sun.tools.javac.util.Assert;
 import org.apache.commons.lang3.StringUtils;
+import org.junit.Assert;
 
 import java.util.Objects;
 
@@ -46,7 +46,7 @@ public class CustomeLinkedList<T> {
 
     public Node<T> addHead(T value){
         Objects.nonNull(value);
-        Assert.checkNonNull(value);
+        Assert.assertNotNull(value);
         Node<T> newNode = new Node<>(value);
         this.headNode=newNode;
         return this.headNode;

@@ -1,4 +1,4 @@
-package com.tester.corejava.datastucture.linkedlist;
+package com.tester.corejava.datastucture.linkedlis;
 
 
 public class CustomLinkedListDemo {
