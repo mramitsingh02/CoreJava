@@ -12,18 +12,13 @@ public class JoinDemo {
 
     public static void main(String[] args) {
         List<Thread> threads = new ArrayList<>();
-        List<Integer> integerList = Arrays.asList(new Integer[]{0, 12, 144, 12999, 22222, 25, 333333});
+        List<Integer> integerList = Arrays.asList(new Integer[]{0, 12, 144, 12999, 22222, 25, 333});
         List<Thread> modifiedThread = integerList.stream().map(integer -> new Thread(new FactorialThread(integer))).collect(Collectors.toList());
-        modifiedThread.forEach(s -> s.start());
-        modifiedThread.forEach(Unchecked.consumer(t -> t.join(2000)));
-
-        //threads.forEach(Unchecked.consumer(Thread::join));
-       /* for (Integer integer : integerList) {
-            threads.add(new Thread(new FactorialThread(integer)));
-        }
-        threads.forEach(x -> x.start());*/
-        //threads.forEach(Unchecked.consumer(Thread::join));
-
+        //modifiedThread.forEach(s -> s.start());
+        modifiedThread.forEach(Unchecked.consumer(t -> {
+            t.start();
+            t.join(2000);
+        }));
         System.out.println("Done");
     }
 
