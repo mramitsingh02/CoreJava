@@ -1,7 +1,7 @@
 package com.tester.thread.producer.consumer.case2;
 
 
-import com.tester.thread.producer.consumer.utils.ThreadUtils;
+import com.tester.thread.utils.ThreadUtils;
 
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.atomic.AtomicInteger;

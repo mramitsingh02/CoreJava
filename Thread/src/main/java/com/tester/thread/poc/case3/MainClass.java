@@ -1,8 +1,6 @@
 package com.tester.thread.poc.case3;
 
-import com.tester.thread.producer.consumer.utils.ThreadUtils;
-
-import java.util.Timer;
+import com.tester.thread.utils.ThreadUtils;
 
 public class MainClass {
 

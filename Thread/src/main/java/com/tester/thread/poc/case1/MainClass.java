@@ -1,11 +1,10 @@
 package com.tester.thread.poc.case1;
 
-import com.tester.thread.producer.consumer.utils.ThreadUtils;
+import com.tester.thread.utils.ThreadUtils;
 
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
-import java.util.concurrent.atomic.AtomicInteger;
 
 public class MainClass {
     public static void main(String[] args) {

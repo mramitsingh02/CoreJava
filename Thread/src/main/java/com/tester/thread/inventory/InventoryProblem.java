@@ -1,6 +1,6 @@
 package com.tester.thread.inventory;
 
-import com.tester.thread.producer.consumer.utils.ThreadUtils;
+import com.tester.thread.utils.ThreadUtils;
 
 import java.util.stream.IntStream;
 

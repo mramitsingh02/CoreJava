@@ -1,6 +1,6 @@
 package com.tester.thread.poc.case2;
 
-import com.tester.thread.producer.consumer.utils.ThreadUtils;
+import com.tester.thread.utils.ThreadUtils;
 
 public class ModifiableMainClass {
     public static void main(String[] args) {

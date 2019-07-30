@@ -1,6 +1,6 @@
 package com.tester.thread.producer.consumer.case1;
 
-import com.tester.thread.producer.consumer.utils.ThreadUtils;
+import com.tester.thread.utils.ThreadUtils;
 
 import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;

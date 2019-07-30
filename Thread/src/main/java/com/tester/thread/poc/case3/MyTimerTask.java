@@ -1,6 +1,6 @@
 package com.tester.thread.poc.case3;
 
-import com.tester.thread.producer.consumer.utils.ThreadUtils;
+import com.tester.thread.utils.ThreadUtils;
 
 import java.util.TimerTask;
 import java.util.concurrent.atomic.AtomicBoolean;

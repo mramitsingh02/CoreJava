@@ -1,4 +1,4 @@
-package com.tester.thread.producer.consumer.utils;
+package com.tester.thread.utils;
 
 import java.util.concurrent.TimeUnit;
 
@@ -77,6 +77,14 @@ public enum ThreadUtils {
             _minute(10);
         }
     };
+
+    public static void join() {
+        try {
+            Thread.currentThread().join();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
 
     public abstract void sleep();
 

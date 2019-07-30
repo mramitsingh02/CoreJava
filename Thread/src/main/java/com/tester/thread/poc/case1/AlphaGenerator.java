@@ -1,6 +1,7 @@
 package com.tester.thread.poc.case1;
 
-import com.tester.thread.producer.consumer.utils.ThreadUtils;
+
+import com.tester.thread.utils.ThreadUtils;
 
 public class AlphaGenerator implements Runnable{
 

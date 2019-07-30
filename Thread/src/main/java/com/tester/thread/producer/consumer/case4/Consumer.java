@@ -1,6 +1,6 @@
 package com.tester.thread.producer.consumer.case4;
 
-import com.tester.thread.producer.consumer.utils.ThreadUtils;
+import com.tester.thread.utils.ThreadUtils;
 
 public class Consumer implements Runnable {
     private final MyCustomeQueue<Integer> listOfItems;

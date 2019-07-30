@@ -1,4 +1,4 @@
-package com.tester.thread.producer.consumer.utils;
+package com.tester.thread.utils;
 
 public class MainClass {
     public static void main(String[] args) {
