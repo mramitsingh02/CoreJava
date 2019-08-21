@@ -18,6 +18,7 @@
         <module>Jool</module>
         <module>DataSturcture</module>
         <module>Annotation</module>
+        <module>Algorithm</module>
     </modules>
 
     <properties>
