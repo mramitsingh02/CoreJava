@@ -322,11 +322,20 @@ __Answer:__ Please find Algorithm
     1.FindElementInArray.java
     2.FindElementInArrayTest.java
 
-
-
 #####3) Java Program to left rotate the elements of an array
 #####4) Java Program to print the duplicate elements of an array
+__Answer:__ Please find Algorithm
+
+    1.DuplicateElement.java
+    
 #####5) Java Program to print the elements of an array
+__Answer:__ Please find Algorithm
+
+     public static void print(int[] elements) {
+        System.out.println(Arrays.toString(elements));
+    }
+
+
 #####6) Java Program to print the elements of an array in reverse order
 #####7) Java Program to print the elements of an array present on even position
 #####8) Java Program to print the elements of an array present on odd position
@@ -334,9 +343,32 @@ __Answer:__ Please find Algorithm
 #####10) Java Program to print the smallest element in an array
 #####11) Java Program to print the number of elements present in an array
 #####12) Java Program to print the sum of all the items of the array
+__Answer:__ Please find Algorithm
+
+
+    1.SumOfAllElements.java
+           SumOfAllElements thisInstance = new SumOfAllElements();
+           thisInstance.sum(SortUtils.elements)
+           thisInstance.sum(SortUtils.elements, 0, SortUtils.elements.length - 1)
+
+
+
 #####13) Java Program to right rotate the elements of an array
 #####14) Java Program to sort the elements of an array in ascending order
+__Answer:__ Please find Algorithm
+
+
+    1.SortingByOrder.java
+    
+          SortingByOrder thisInstance = new SortingByOrder();
+          thisInstance.sort(SortUtils.elements, Order.ASC);
 #####15) Java Program to sort the elements of an array in descending order
+__Answer:__ Please find Algorithm
+
+
+    1.SortingByOrder.java
+           SortingByOrder thisInstance = new SortingByOrder();
+           thisInstance.sort(SortUtils.elements, Order.DESC);
 
 #####16) Find 3rd Largest Number in an Array
 Write a java program to find 3rd largest number in an array.
@@ -419,6 +451,11 @@ Write a java program to add two matrices.
     2 2 2
     4 4 4
     6 6 6
+ 
+__Answer:__ Please find Algorithm   
+    
+    1.MatrixOperation.java (add method)
+    
 ######23) Multiply Two Matrices
 Write a java program to multiply two matrices.
     
@@ -438,6 +475,11 @@ Write a java program to multiply two matrices.
     6 6 6
     12 12 12
     18 18 18
+    
+__Answer:__ Please find Algorithm   
+    
+    1.MatrixOperation.java (multiply method)
+    
 #####24) Print Odd and Even Number from an Array
 Write a java program to print odd and even number from an array.
 
@@ -451,6 +493,14 @@ Write a java program to print odd and even number from an array.
     2
     6
     2
+    
+__Answer:__ Please find Algorithm   
+        
+        1.PrintOddEven.java
+            i)   approach1
+            ii)  approach2
+            iii) approach3
+    
 #####25) Transpose matrix
 Write a java program to transpose a matrix.
     
@@ -466,8 +516,9 @@ Write a java program to transpose a matrix.
     4 3 5 
 ##Java Matrix Programs
 Java Matrix Programs
-2) Java Program to subtract the two matrices
-3) Java Program to determine whether a given matrix is an identity matrix
+#####1) Java Program to subtract the two matrices
+
+2) Java Program to determine whether a given matrix is an identity matrix
 4) Java Program to determine whether a given matrix is a sparse matrix
 5) Java Program to determine whether two matrices are equal
 6) Java Program to display the lower triangular matrix

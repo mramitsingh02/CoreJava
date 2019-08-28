@@ -2,6 +2,8 @@ package com.tester.sort;
 
 import java.util.Arrays;
 
+import static com.tester.sort.SortUtils.swap;
+
 public class HeapSort {
     public static void main(String[] args) {
         HeapSort thisInstance = new HeapSort();
@@ -40,14 +42,7 @@ public class HeapSort {
             swap(elements, largest, i);
             heapify(elements, n, largest);
         }
-
-
     }
 
-    private void swap(int[] elements, int fromIdx, int toIdx) {
-        int temp = elements[fromIdx];
-        elements[fromIdx] = elements[toIdx];
-        elements[toIdx] = temp;
-    }
 
 }

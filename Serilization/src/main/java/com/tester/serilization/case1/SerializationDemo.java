@@ -2,14 +2,14 @@ package com.tester.serilization.case1;
 
 import java.io.*;
 
-public class SerilizationDemo {
+public class SerializationDemo {
     public static void main(String[] args) {
 
-        serilisation();
-        deserilisation();
+        serialization();
+        deserialization();
     }
 
-    private static void deserilisation() {
+    private static void deserialization() {
         try (FileInputStream fileInputStream = new FileInputStream("student.dat")) {
             ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream);
             Student student = (Student) objectInputStream.readObject();
@@ -23,7 +23,7 @@ public class SerilizationDemo {
         }
     }
 
-    private static void serilisation() {
+    private static void serialization() {
         try (FileOutputStream fos = new FileOutputStream("student.dat")) {
             ObjectOutputStream oos = new ObjectOutputStream(fos);
 
