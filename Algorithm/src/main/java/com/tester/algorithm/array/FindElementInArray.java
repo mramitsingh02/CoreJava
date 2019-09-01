@@ -9,11 +9,13 @@ public class FindElementInArray {
         System.out.println();
     }
 
-    public int find(int[] elements, int i) {
+    public int find(int[] elements, int searchValue) {
 
-
+        int result = ArrayUtils.findPivot(elements, 0, elements.length);
 
 
         return 0;
     }
+
+
 }

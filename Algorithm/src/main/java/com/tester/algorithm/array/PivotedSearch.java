@@ -4,6 +4,7 @@ import com.tester.sort.SortUtils;
 
 
 public class PivotedSearch {
+
     public static void main(String[] args) {
         PivotedSearch thisInstance = new PivotedSearch();
         int[] elements = {5, 6, 7, 8, 9, 10, 1, 2, 3};
@@ -24,7 +25,7 @@ public class PivotedSearch {
     //5) Search an element in a sorted and rotated array
     public int pivotBinarySearch(int[] elements, int key) {
         int length = elements.length - 1;
-        int pivot = findPivot(elements, 0, length);
+        int pivot = ArrayUtils.findPivot(elements, 0, length);
         if (pivot == -1) {
             return this.binarySearch(elements, 0, length, key);
         }
@@ -53,28 +54,6 @@ public class PivotedSearch {
         }
     }
 
-    public int findPivot(int[] elements, int start, int end) {
-        if (end < start) {
-            return -1;
-        }
-        if (start == end) {
-            return start;
-        }
-        int mid = (end + start) / 2;
-
-        if (mid < end && elements[mid] > elements[mid + 1]) {
-            return mid;
-        }
-        if (mid > start && elements[mid] < elements[mid - 1]) {
-            return mid - 1;
-        }
-
-        if (elements[start] >= elements[mid]) {
-            return findPivot(elements, start, mid - 1);
-        }
-        return findPivot(elements, mid + 1, end);
-
-    }
 
 }
 

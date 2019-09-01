@@ -6,10 +6,27 @@ href="https://java2blog.com/data-structure-and-algorithm-interview-questions-in-
 ##Table of Contents
 
 ###Stack
-    Question 1 :  Implement a stack using array. 
-    Question 2 : Implement a stack using Linked List :
-    Question 3 :  Implement a stack using two queues .
-    Question 4 : Sort an stack using another stack
+#####Question 1  : Implement a stack using array. 
+____Answer:____ 
+        
+        1. StackUsingArray.java 
+    
+#####Question 2  : Implement a stack using Linked List :
+____Answer:____ 
+        
+        1. StackUsingLinkedList.java
+    
+#####Question 3 :  Implement a stack using two queues .
+____Answer:____ 
+        
+        1. StackUsingTwoQueue.java
+    
+
+#####Question 4 : Sort an stack using another stack
+____Answer:____ 
+        
+        1. SortStackUsingStack.java
+    
 ###Queue
         Question 5 :  Implement Queue using Array in java.
         Question 6 :  Implement a stack using two queues.

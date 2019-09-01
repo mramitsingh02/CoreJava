@@ -2,24 +2,6 @@ package com.tester.algorithm.array;
 
 import com.tester.sort.SortUtils;
 
-class Pair {
-    private String firstValue;
-    private String secondValue;
-
-
-    public Pair(String firstValue, String secondValue) {
-        this.firstValue = firstValue;
-        this.secondValue = secondValue;
-    }
-
-    @Override
-    public String toString() {
-        return "Pair{" +
-                "firstValue='" + firstValue + '\'' +
-                ", secondValue='" + secondValue + '\'' +
-                '}';
-    }
-}
 
 public class FindSumOfPairExisted {
     public static void main(String[] args) {

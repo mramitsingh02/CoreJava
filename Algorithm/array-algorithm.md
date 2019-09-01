@@ -94,7 +94,10 @@ __Answer:__ Find the Algorithm for Search an element in a sorted and rotated arr
     Input: arr[] = {11, 15, 26, 38, 9, 10}, x = 45
     Output: false
     There is no pair with sum 45.
-#####7) Find maximum value of Sum( i*arr[i]) with only rotations on given array allowed
+    
+    
+    
+#####7) Find maximum value of Sum( i*ar r[i]) with only rotations on given array allowed
     Input: arr[] = {1, 20, 2, 10}
     Output: 72
     We can 72 by rotating array twice.
@@ -107,6 +110,12 @@ __Answer:__ Find the Algorithm for Search an element in a sorted and rotated arr
     {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
     0*1 + 1*2 + 2*3 ... 9*10 = 330
 
+__Answer:__ Find the Algorithm
+
+     1.  FindMaximumValueOfSum.java
+     2.  FindMaximumValueOfSumTest.java
+
+
 #####8) Maximum sum of i*arr[i] among all rotations of a given array
     Input : arr[] = {8, 3, 1, 2}
     Output : 29
@@ -118,6 +127,13 @@ __Answer:__ Find the Algorithm for Search an element in a sorted and rotated arr
     
     Input : arr[] = {3, 2, 1}
     Output : 7
+__Answer:__ Find the Algorithm
+
+     1.  FindMaximumOfSumValueForAllRotation.java
+     2.  FindMaximumOfSumValueForAllRotationTest.java
+
+
+
 #####9) Find the Rotation Count in Rotated Sorted array
     Input : arr[] = {15, 18, 2, 3, 6, 12}
     Output: 2
@@ -130,6 +146,13 @@ __Answer:__ Find the Algorithm for Search an element in a sorted and rotated arr
     
     Input: arr[] = {7, 9, 11, 12, 15};
     Output: 0
+
+__Answer:__ Find the Algorithm.
+
+    1. FindRotationCount.java
+    2. FindRotationCountTest.java
+    
+    
 #####10) Quickly find multiple left rotations of an array
     Input : arr[] = {1, 3, 5, 7, 9}
             k1 = 1
@@ -144,6 +167,13 @@ __Answer:__ Find the Algorithm for Search an element in a sorted and rotated arr
     Input : arr[] = {1, 3, 5, 7, 9}
             k1 = 14 
     Output : 9 1 3 5 7
+    
+
+__Answer:__ Find the Algorithm.
+
+    1. QuickFindLeftRotation.java
+    2. QuickFindLeftRotation2.java
+        
 #####11) Find the minimum element in a sorted and rotated array
     Input: {5, 6, 1, 2, 3, 4}
     Output: 1
@@ -153,15 +183,26 @@ __Answer:__ Find the Algorithm for Search an element in a sorted and rotated arr
     
     Input: {2, 1}
     Output: 1
+    
+__Answer:__ Find the Algorithm.
+    
+        1. FindTheMinimumElementInArray.java
+        2. FindTheMinimumElementInArrayTest.java
+    
 #####12) Reversal algorithm for right rotation of an array
-    Input: arr[] = {1, 2, 3, 4, 5, 
-                    6, 7, 8, 9, 10}
+    Input: arr[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
               k = 3
     Output: 8 9 10 1 2 3 4 5 6 7
     
     Input: arr[] = {121, 232, 33, 43 ,5}
                k = 2
     Output: 43 5 121 232 33
+    
+__Answer:__ Find the Algorithm.
+    
+        1. FindTheMinimumElementInArray.java
+        2. FindTheMinimumElementInArrayTest.java
+    
 
 #####13) Find a rotation with maximum hamming distance
     Input :  1 4 1
@@ -179,6 +220,9 @@ __Answer:__ Find the Algorithm for Search an element in a sorted and rotated arr
     We get this hamming distance with 4 8 0 2.
     All the places can be occupied by another digit.
     Other solutions can be 8 0 2 4, 4 0 2 8 etc.
+    
+    
+    
 #####14) Queries on Left and Right Circular shift on array
     Input : n = 5, arr[] = { 1, 2, 3, 4, 5 }
             query 1 = { 1, 3 }

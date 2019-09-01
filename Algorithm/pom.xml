@@ -9,7 +9,12 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
+    <groupId>com.tester.corejava</groupId>
     <artifactId>Algorithm</artifactId>
+    <packaging>jar</packaging>
+    <version>1.0-SNAPSHOT</version>
+
+
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
