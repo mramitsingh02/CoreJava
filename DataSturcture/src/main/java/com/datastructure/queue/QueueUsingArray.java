@@ -19,14 +19,14 @@ public class QueueUsingArray implements CustomQueue {
     public void put(int value) {
         if (isFull()) {
             System.out.println("Queue is full....");
-            return;
+        } else {
+            rear++;
+            if (rear == capacity) {
+                rear = 0;
+            }
+            internalQueue[rear] = value;
+            currentSize++;
         }
-        if (rear == capacity - 1) {
-            rear = 0;
-        }
-
-        currentSize++;
-        internalQueue[front++] = value;
     }
 
     @Override
@@ -34,12 +34,16 @@ public class QueueUsingArray implements CustomQueue {
 
         if (isEmpty()) {
             System.out.println("Queue is empty....");
-            return -1;
+            // throw new RuntimeException("Element not found.");
+            return 0;
         } else {
-
-            int returnValue = internalQueue[++rear];
-            if (front == capacity - 1) {
+            int returnValue = 0;
+            front++;
+            if (front == capacity) {
+                returnValue = internalQueue[front - 1];
                 front = 0;
+            } else {
+                returnValue = internalQueue[front - 1];
             }
             currentSize--;
             return returnValue;
@@ -48,7 +52,7 @@ public class QueueUsingArray implements CustomQueue {
 
     @Override
     public void print() {
-        for (int i = rear + 1; i < front; i++) {
+        for (int i = 0; i < currentSize; i++) {
             System.out.println(internalQueue[i]);
         }
     }
@@ -60,7 +64,7 @@ public class QueueUsingArray implements CustomQueue {
 
     @Override
     public boolean isFull() {
-        return front == capacity;
+        return currentSize == capacity;
     }
 
     @Override

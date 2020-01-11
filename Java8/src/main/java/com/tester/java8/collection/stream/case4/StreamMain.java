@@ -16,12 +16,7 @@ public class StreamMain {
     }
 
     private static void sortParallel() {
-        values.clear();
-
-        for (int i = 0; i < MAX; i++) {
-            String value = UUID.randomUUID().toString();
-            values.add(value);
-        }
+        generateData();
         long t0 = System.nanoTime();
         long count = values.stream().sorted().count();
         System.out.println("Total Count : " + count);
@@ -33,10 +28,7 @@ public class StreamMain {
     }
 
     private static void sortSequential() {
-        values.clear();
-        for (int i = 0; i < MAX; i++) {
-            values.add(UUID.randomUUID().toString());
-        }
+        generateData();
         long t0 = System.nanoTime();
         long count = values.parallelStream().sorted(Comparator.reverseOrder()).count();
         System.out.println("Total Count : " + count);
@@ -45,5 +37,12 @@ public class StreamMain {
         long toMillis = TimeUnit.NANOSECONDS.toMillis(t1 - t0);
         System.out.println("Total time took : " + toMillis + " milli second.");
 
+    }
+
+    private static void generateData() {
+        values.clear();
+        for (int i = 0; i < MAX; i++) {
+            values.add(UUID.randomUUID().toString());
+        }
     }
 }

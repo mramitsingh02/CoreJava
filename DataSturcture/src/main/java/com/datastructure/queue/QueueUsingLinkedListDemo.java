@@ -1,8 +1,8 @@
 package com.datastructure.queue;
 
-public class QueueUsingArrayDemo {
+public class QueueUsingLinkedListDemo {
     public static void main(String[] args) {
-        CustomQueue thisInstance = new QueueUsingArray(5);
+        CustomQueue thisInstance = new QueueUsingLinkedList();
 
         thisInstance.put(10);
         thisInstance.put(11);
@@ -20,9 +20,14 @@ public class QueueUsingArrayDemo {
         System.out.println(thisInstance.get());
         System.out.println(thisInstance.get());
         System.out.println(thisInstance.get());
+        try {
 
-        System.out.println(thisInstance.get());
-        System.out.println(thisInstance.get());
+            System.out.println(thisInstance.get());
+            System.out.println(thisInstance.get());
+
+        } catch (RuntimeException e) {
+            e.printStackTrace();
+        }
         thisInstance.put(15);
         thisInstance.print();
 

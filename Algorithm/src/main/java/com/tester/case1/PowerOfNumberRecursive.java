@@ -13,7 +13,6 @@ public class PowerOfNumberRecursive {
         long endTime = System.currentTimeMillis();
         System.out.println("Time Diff : " + (endTime - startTime) + "ms.");
 
-
     }
 
     public BigInteger pow(int power, int number) {

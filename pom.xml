@@ -19,6 +19,7 @@
         <module>DataSturcture</module>
         <module>Annotation</module>
         <module>Algorithm</module>
+        <module>ImportentLink</module>
     </modules>
 
     <properties>

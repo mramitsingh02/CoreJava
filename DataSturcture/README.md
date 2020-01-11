@@ -20,7 +20,6 @@ ____Answer:____
 ____Answer:____ 
         
         1. StackUsingTwoQueue.java
-    
 
 #####Question 4 : Sort an stack using another stack
 ____Answer:____ 
@@ -28,18 +27,44 @@ ____Answer:____
         1. SortStackUsingStack.java
     
 ###Queue
-        Question 5 :  Implement Queue using Array in java.
-        Question 6 :  Implement a stack using two queues.
+#####Question 5 :  Implement Queue using Array in java.
+____Answer:____ 
+        
+        1. SortStackUsingStack.java
+    
+#####Question 6 :  Implement a stack using two queues.
+____Answer:____ 
+        
+        1. SortStackUsingStack.java
+
 ###Linked List
-        Question 7 : Implement singly linked list in java.
-        Question 8 : How to reverse linked list in java.
-        Question 9 : How to find middle element of linked list.
-        Question 10 : How to find nth element from end of linked list .
-        Question 11 : How to detect a loop in linked list. If linked list has loop, find the start node for the loop.
-        Question 12 : How to check if linked list is palindrome or not?
-        Question 13 :  Find intersection of two linked lists?
-        Question 14 :  How to reverse a linked list in pairs?
-        Question 15 :  Implement Doubly linked list in java?
+        
+#####Question 7 : Implement singly linked list in java.
+____Answer:____ 
+        
+        1. SinglyLinkedList.java
+        
+#####Question 8 : How to reverse linked list in java.
+____Answer:____ 
+        
+        1. ReverseLinkedList.java
+
+#####Question 9 : How to find middle element of linked list.
+____Answer:____ 
+        
+        1. FindMidElementInLinkedList.java
+
+#####Question 10 : How to find nth element from end of linked list .
+
+____Answer:____ 
+        
+        1. FindNthElementFromEndOfLinkedList.java
+
+#####Question 11 : How to detect a loop in linked list. If linked list has loop, find the start node for the loop.
+#####Question 12 : How to check if linked list is palindrome or not?
+#####Question 13 :  Find intersection of two linked lists?
+#####Question 14 :  How to reverse a linked list in pairs?
+#####Question 15 :  Implement Doubly linked list in java?
 ###Array
         Question 16 : Write java Program to Find Smallest and Largest Element in an Array.
         Question 17 : Find missing number in the array.

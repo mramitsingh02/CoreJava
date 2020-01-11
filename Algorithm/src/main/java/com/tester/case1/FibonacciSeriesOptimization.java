@@ -17,7 +17,7 @@ public class FibonacciSeriesOptimization {
         long startTime = System.currentTimeMillis();
         for (int i = 1; i <= 50; i++) {
             BigInteger fibonacci = fibonacci(i);
-            System.out.print(fibonacci.toString() + " ");
+            System.out.print( i+ "=("+fibonacci.toString() + ") ");
         }
         long endTime = System.currentTimeMillis();
 

@@ -8,9 +8,12 @@ public class MergeSort {
         int[] elements = SortUtils.elements;
         thisInstance.sort(elements, 0, elements.length - 1);
         System.out.println(Arrays.toString(elements));
+        double pow = Math.pow(3, 0);
+        System.out.println((long)pow);
     }
 
     public void sort(int[] elements, int startIndex, int endIndex) {
+
         if (startIndex < endIndex) {
             int middleIndex = (endIndex + startIndex) / 2;
             sort(elements, startIndex, middleIndex);

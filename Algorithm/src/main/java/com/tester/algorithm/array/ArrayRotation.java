@@ -23,6 +23,10 @@ public class ArrayRotation {
     public void rotate(int[] elements, int byPositions) {
         int[] backup = new int[byPositions];
         int length = elements.length;
+        if(byPositions < 0 || byPositions > length || (length - byPositions) < 0)
+            throw new  IllegalArgumentException("Given input is no correct.");
+
+
 
         for (int j = 0, i = (length - byPositions); i < length && j < byPositions; i++, j++) {
             backup[j] = elements[i];

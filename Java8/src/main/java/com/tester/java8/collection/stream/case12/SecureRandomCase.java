@@ -11,7 +11,7 @@ public class SecureRandomCase {
         System.out.println(Arrays.toString(ints));
 
 
-        int[] ints1 = IntStream.iterate(1, n -> n * 2).limit(11).toArray();
+        int[] ints1 = IntStream.iterate(1, n -> n * 2).limit(21).toArray();
         System.out.println(Arrays.toString(ints1));
 
 

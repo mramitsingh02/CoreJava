@@ -1,4 +1,4 @@
-package com.tester.thread.semaphore;
+package com.tester.thread.factory;
 
 import com.tester.thread.utils.Pools;
 import com.tester.thread.utils.ThreadUtils;
@@ -6,7 +6,7 @@ import com.tester.thread.utils.ThreadUtils;
 import java.util.concurrent.*;
 import java.util.stream.IntStream;
 
-public class SemaphoreCase1 {
+public class CustomThreadFactory {
     private static Semaphore semaphore = new Semaphore(5);
 
     public static void main(String[] args) {
@@ -22,7 +22,7 @@ public class SemaphoreCase1 {
         };
 
         ExecutorService service = Executors.newFixedThreadPool(10, threadFactory);
-        IntStream.range(1, 11).parallel().forEach(i -> service.submit(SemaphoreCase1::doWork));
+        IntStream.range(1, 11).parallel().forEach(i -> service.submit(CustomThreadFactory::doWork));
         Pools.off(service);
 
     }
