@@ -20,6 +20,7 @@
         <module>Annotation</module>
         <module>Algorithm</module>
         <module>ImportentLink</module>
+        <module>MemoryManagement</module>
     </modules>
 
     <properties>
