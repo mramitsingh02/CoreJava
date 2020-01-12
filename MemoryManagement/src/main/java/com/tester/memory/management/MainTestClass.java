@@ -1,10 +1,7 @@
 package com.tester.memory.management;
 
 import java.io.PrintStream;
-import java.lang.management.ManagementFactory;
-import java.lang.management.MemoryPoolMXBean;
-import java.lang.management.MemoryUsage;
-import java.lang.management.ThreadMXBean;
+import java.lang.management.*;
 import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
@@ -31,11 +28,14 @@ public class MainTestClass {
 
 
 
-        List<MemoryPoolMXBean> pools = ManagementFactory.getMemoryPoolMXBeans().stream().filter(MemoryPoolMXBean::isUsageThresholdExceeded).collect(Collectors.toList());
+        List<MemoryPoolMXBean> pools = ManagementFactory.getMemoryPoolMXBeans().stream().filter(x -> MemoryType.HEAP.equals(x.getType())).collect(Collectors.toList());
         for (MemoryPoolMXBean pool : pools) {
             MemoryUsage peak = pool.getPeakUsage();
-            out.printf("Peak %s memory used: %,d%n", pool.getName(), peak.getUsed());
-            out.printf("Peak %s memory reserved: %,d%n", pool.getName(), peak.getCommitted());
+            out.printf("%s %s\n", pool.getName(), peak.toString());
+//            out.printf("Peak %s memory init: %,d%n", pool.getName(), peak.getInit());
+//            out.printf("Peak %s memory Max: %,d%n", pool.getName(), peak.getMax());
+//            out.printf("Peak %s memory used: %,d%n", pool.getName(), peak.getUsed());
+//            out.printf("Peak %s memory reserved: %,d%n", pool.getName(), peak.getCommitted());
         }
 
     }

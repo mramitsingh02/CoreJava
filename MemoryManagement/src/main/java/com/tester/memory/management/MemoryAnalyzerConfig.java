@@ -9,15 +9,15 @@ public class MemoryAnalyzerConfig {
     private AtomicReference<SystemThreadInfo> systemThreadInfo;
 
 
-    public AtomicReference<SystemThreadInfo> getSystemThreadInfo() {
-        return systemThreadInfo;
+    public SystemThreadInfo getSystemThreadInfo() {
+        return systemThreadInfo.get();
     }
 
     public void setSystemThreadInfo(SystemThreadInfo systemThreadInfo) {
         if (this.systemThreadInfo == null) {
             this.systemThreadInfo = new AtomicReference<>(systemThreadInfo);
         } else {
-            this.systemThreadInfo.compareAndSet(this.systemThreadInfo.get(), systemThreadInfo);
+            this.systemThreadInfo.compareAndSet(getSystemThreadInfo(), systemThreadInfo);
         }
     }
 
@@ -29,7 +29,7 @@ public class MemoryAnalyzerConfig {
         if (this.classLoadInfo == null) {
             this.classLoadInfo = new AtomicReference<>(classLoadInfo);
         } else {
-            this.classLoadInfo.compareAndSet(this.classLoadInfo.get(), classLoadInfo);
+            this.classLoadInfo.compareAndSet(getClassLoadInfo(), classLoadInfo);
         }
     }
 
@@ -41,7 +41,7 @@ public class MemoryAnalyzerConfig {
         if (this.operatingSystemInfo == null) {
             this.operatingSystemInfo = new AtomicReference<>(operatingSystemInfo);
         } else {
-            this.operatingSystemInfo.compareAndSet(this.operatingSystemInfo.get(), operatingSystemInfo);
+            this.operatingSystemInfo.compareAndSet(getOperatingSystemInfo(), operatingSystemInfo);
         }
     }
 

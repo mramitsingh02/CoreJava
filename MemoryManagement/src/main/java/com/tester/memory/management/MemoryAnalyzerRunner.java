@@ -1,7 +1,9 @@
 package com.tester.memory.management;
 
 import java.lang.management.ManagementFactory;
+import java.lang.management.MemoryType;
 import java.util.concurrent.TimeUnit;
+import java.util.stream.Collectors;
 
 public class MemoryAnalyzerRunner implements Runnable {
     private MemoryAnalyzerConfig config;
@@ -22,7 +24,7 @@ public class MemoryAnalyzerRunner implements Runnable {
     }
 
     private SystemThreadInfo getSystemThreadInfo() {
-        return new SystemThreadInfo();
+        return new SystemThreadInfo(ManagementFactory.getMemoryPoolMXBeans().stream().filter(x -> MemoryType.HEAP.equals(x.getType())).collect(Collectors.toList()));
     }
 
     private void sleep() {

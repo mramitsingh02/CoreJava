@@ -12,18 +12,30 @@ public class ClassLoadInfo {
         if (this.totalLoadedClassCount == null) {
             this.totalLoadedClassCount = new AtomicLong(totalLoadedClassCount);
         } else {
-            this.totalLoadedClassCount.compareAndSet(this.totalLoadedClassCount.get(), totalLoadedClassCount);
+            this.totalLoadedClassCount.compareAndSet(getTotalLoadedClassCount(), totalLoadedClassCount);
         }
         if (this.loadedClassCount == null) {
             this.loadedClassCount = new AtomicLong(loadedClassCount);
         } else {
-            this.loadedClassCount.compareAndSet(this.loadedClassCount.get(), loadedClassCount);
+            this.loadedClassCount.compareAndSet(getLoadedClassCount(), loadedClassCount);
         }
         if (this.unloadedClassCount == null) {
             this.unloadedClassCount = new AtomicLong(unloadedClassCount);
         } else {
-            this.unloadedClassCount.compareAndSet(this.unloadedClassCount.get(), unloadedClassCount);
+            this.unloadedClassCount.compareAndSet(getUnloadedClassCount(), unloadedClassCount);
         }
+    }
+
+    public long getTotalLoadedClassCount() {
+        return totalLoadedClassCount.get();
+    }
+
+    public long getUnloadedClassCount() {
+        return unloadedClassCount.get();
+    }
+
+    public long getLoadedClassCount() {
+        return loadedClassCount.get();
     }
 
     @Override

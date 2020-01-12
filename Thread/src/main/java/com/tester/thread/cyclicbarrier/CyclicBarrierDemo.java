@@ -9,11 +9,11 @@ public class CyclicBarrierDemo {
         new Thread(new MyRunnable(cyclicBarrier)).start();
 
         TimeUnit.SECONDS.sleep(1l);
-        System.out.println("Waiting for othere 1");
+        System.out.println("Waiting for other 1");
         new Thread(new MyRunnable(cyclicBarrier)).start();
         new Thread(new MyRunnable(cyclicBarrier)).start();
         TimeUnit.SECONDS.sleep(1l);
-        System.out.println("Waiting for othere 2");
+        System.out.println("Waiting for other 2");
 
         new Thread(new MyRunnable(cyclicBarrier)).start();
         TimeUnit.SECONDS.sleep(1l);
