@@ -1,7 +1,17 @@
 package com.tester.algorithm.array;
 
+import java.util.Arrays;
+import java.util.stream.Collectors;
+
 public class ArrayUtils {
 
+    public static void printArrayElement(String msg, int[] ints) {
+        System.out.println(msg);
+        String collect = Arrays.stream(ints)
+                .mapToObj(String::valueOf)
+                .collect(Collectors.joining(","));
+        System.out.println(collect);
+    }
 
     public static int findPivot(int[] elements, int start, int end) {
         if (end < start) {

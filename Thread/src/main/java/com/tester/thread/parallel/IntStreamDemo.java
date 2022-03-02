@@ -21,6 +21,7 @@ public class IntStreamDemo {
 
 
 
+
         System.out.println("Size = " + (size - lstOfQueue.size()));
 //        System.out.println("Size = " + (size - lstOfString1.size()));
 

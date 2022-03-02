@@ -23,7 +23,7 @@ public class BubbleSortTest {
 
     @BeforeClass
     public static void setUp() {
-        int length = 10000;
+        int length = 100;
         Random random = new Random(1000);
         elements = new int[length];
         expected = new int[length];
@@ -34,7 +34,7 @@ public class BubbleSortTest {
         Arrays.sort(expected);
     }
 
-    @Test(timeout = 150)
+    @Test(timeout = 200)
     public void shouldSortGiveLongInputWithGiveTimePeriod() {
         thisInstance.sort(elements);
         Assert.assertArrayEquals(expected, elements);

@@ -11,6 +11,17 @@ public class SortUtils {
     public static final int[] DUPLICATE_ELEMENTS = {9, 13, 3, 2, 7, 5, 11, 3, 5, 9};
 
 
+    public static final int[] getElements()
+    {
+        return Arrays.copyOf(elements, elements.length);
+    }
+
+    public static final int[] getExpected()
+    {
+        return Arrays.copyOf(expected, elements.length);
+    }
+
+
     public static void swap(int[] elements, int fromIdx, int toIdx) {
         int temp = elements[fromIdx];
         elements[fromIdx] = elements[toIdx];
