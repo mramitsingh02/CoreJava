@@ -7,6 +7,8 @@ public class SumOfAllElements {
         SumOfAllElements thisInstance = new SumOfAllElements();
         System.out.println("Approach 1 : "+ thisInstance.sum(SortUtils.duplicateElements));
         System.out.println("Approach 2 : "+thisInstance.sum(SortUtils.duplicateElements, 0, SortUtils.duplicateElements.length - 1));
+        int abc = 0;
+        System.out.println();
 
     }
 

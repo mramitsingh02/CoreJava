@@ -2,6 +2,8 @@ package com.tester.algorithm.array;
 
 import com.tester.sort.SortUtils;
 
+import javax.xml.stream.events.Comment;
+
 
 public class ArrayRotation {
     public static void main(String[] args) {
@@ -31,7 +33,8 @@ public class ArrayRotation {
         for (int j = 0, i = (length - byPositions); i < length && j < byPositions; i++, j++) {
             backup[j] = elements[i];
         }
-        for (int i = elements.length - 1 - byPositions; i >= 0; i--) {
+        int actualIndex = elements.length - 1;
+        for (int i = (actualIndex - byPositions); i >= 0; i--) {
             elements[i + byPositions] = elements[i];
         }
         for (int i = 0; i < backup.length; i++) {

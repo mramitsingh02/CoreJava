@@ -10,21 +10,6 @@ public class Student {
 
     private long roleNumber;
     private String fname;
-
-    @Override
-    public String toString() {
-        return "Student{" +
-                "roleNumber=" + roleNumber +
-                ", fname='" + fname + '\'' +
-                ", lname='" + lname + '\'' +
-                ", dateOfBirth=" + dateOfBirth +
-                ", fatherName='" + fatherName + '\'' +
-                ", gender=" + gender +
-                ", employeeId=" + employeeId +
-                ", emailId='" + emailId + '\'' +
-                '}';
-    }
-
     private String lname;
     private LocalDate dateOfBirth;
     private String fatherName;
@@ -32,9 +17,9 @@ public class Student {
     private long employeeId;
     private String emailId;
 
-
     public Student() {
     }
+
 
     public Student(long roleNumber, String fname) {
         this();
@@ -49,6 +34,20 @@ public class Student {
         this.dateOfBirth = dateOfBirth;
         this.fatherName = fatherName;
         this.gender = gender;
+    }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "roleNumber=" + roleNumber +
+                ", fname='" + fname + '\'' +
+                ", lname='" + lname + '\'' +
+                ", dateOfBirth=" + dateOfBirth +
+                ", fatherName='" + fatherName + '\'' +
+                ", gender=" + gender +
+                ", employeeId=" + employeeId +
+                ", emailId='" + emailId + '\'' +
+                '}';
     }
 
     public long getRoleNumber() {

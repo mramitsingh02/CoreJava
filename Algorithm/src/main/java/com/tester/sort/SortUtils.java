@@ -5,6 +5,7 @@ import java.util.Arrays;
 public class SortUtils {
 
     public static final int[] oneToSeven = {1, 2, 3, 4, 5, 6, 7};
+    public static final int[] twoTimeDuplicate = {1, 2,2, 3,3,4, 4, 5,5, 6, 6, 7};
     public static final int[] elements = {18, 9, 33, 4, 84, 32, 96, 12, 11, 5, 122, 100};
     public static final int[] duplicateElements = {18, 9, 33, 4, 84, 32, 96, 12, 11, 5, 122, 100, 84, 4, 6, 11};
     public static final int[] expected = {4, 5, 9, 11, 12, 18, 32, 33, 84, 96, 100, 122};
