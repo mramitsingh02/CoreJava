@@ -1,10 +1,11 @@
 package com.tester.thread.interrupt.case2;
 
 import java.math.BigInteger;
+import java.util.concurrent.atomic.AtomicBoolean;
 
 public class InterruptDemo {
     public static void main(String[] args) throws InterruptedException {
-        Thread thread= new Thread(new LongComputationTask(new BigInteger("20"), new BigInteger("2")));
+        Thread thread= new Thread(new LongComputationTask(new AtomicBoolean(false)));
         thread.start();
         Thread.sleep(10000);
         thread.interrupt();

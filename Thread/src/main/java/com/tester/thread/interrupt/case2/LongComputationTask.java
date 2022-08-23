@@ -1,31 +1,37 @@
 package com.tester.thread.interrupt.case2;
 
 import java.math.BigInteger;
+import java.util.concurrent.TimeUnit;
+import java.util.concurrent.atomic.AtomicBoolean;
 
 public class LongComputationTask implements Runnable {
-    private final BigInteger base;
-    private final BigInteger power;
+    private final AtomicBoolean flag;
 
-    public LongComputationTask(BigInteger base, BigInteger power) {
-        this.base = base;
-        this.power = power;
+    public LongComputationTask(AtomicBoolean flag) {
+
+        this.flag = flag;
     }
+
     @Override
     public void run() {
-        System.out.println(base + "^" + power + " = " + pow(base, power));
-    }
+     //   System.out.println(base + "^" + power + " = " + pow(base, power));
+        while (!Thread.currentThread().isInterrupted() && !flag.get() ) {
 
-    private BigInteger pow(BigInteger base, BigInteger power) {
-        BigInteger result = BigInteger.ONE;
-
-        for (BigInteger i = BigInteger.ZERO; i.compareTo(power) != 0; i = i.add(BigInteger.ONE)) {
-            if (Thread.currentThread().isInterrupted()) {
-                System.out.println("Prematurely interrupted computation");
-                return BigInteger.ZERO;
+            if(flag.get()){
+                System.out.println("Call interrupt");
+                Thread.currentThread().interrupt();
             }
-            result = result.multiply(base);
+
+            try {
+                System.out.println(Thread.currentThread().getName() +  " sleeping for 5 min");
+                TimeUnit.SECONDS.sleep(5);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
         }
 
-        return result;
+
     }
+
+
 }
