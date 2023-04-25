@@ -5,8 +5,8 @@ import com.tester.sort.SortUtils;
 public class SumOfAllElements {
     public static void main(String[] args) {
         SumOfAllElements thisInstance = new SumOfAllElements();
-        System.out.println("Approach 1 : "+ thisInstance.sum(SortUtils.duplicateElements));
-        System.out.println("Approach 2 : "+thisInstance.sum(SortUtils.duplicateElements, 0, SortUtils.duplicateElements.length - 1));
+        System.out.println("Approach 1 : " + thisInstance.sum(SortUtils.duplicateElements));
+        System.out.println("Approach 2 : " + thisInstance.sum(SortUtils.duplicateElements, 0, SortUtils.duplicateElements.length - 1));
         int abc = 0;
         System.out.println();
 

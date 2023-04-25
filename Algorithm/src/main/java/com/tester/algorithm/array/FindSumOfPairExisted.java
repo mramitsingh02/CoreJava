@@ -32,7 +32,7 @@ public class FindSumOfPairExisted {
                 pivotPoint = i - 1;
             }
         }
-        System.out.println("Pivot Point : " + pivotPoint);
+        System.out.println("Pivot Point Index: " + pivotPoint);
         if (pivotPoint == -1) {
             return findSumPair(elements, low, high, sumValue);
         } else {

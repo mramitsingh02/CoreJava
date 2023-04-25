@@ -4,11 +4,13 @@ package com.tester.case1;
 public class CheckArmstrongNumber {
     public static void main(String[] args) {
         CheckArmstrongNumber thisInstance = new CheckArmstrongNumber();
-        int number = 22;
-        if (thisInstance.check(number)) {
-            System.out.println("Armstrong Number");
-        } else {
-            System.out.println("Not Armstrong Number");
+        int[] numbers = new int[]{1634, 125, 512, 23422};
+        for (int number : numbers) {
+            if (thisInstance.check(number)) {
+                System.out.println("Armstrong Number");
+            } else {
+                System.out.println("Not Armstrong Number");
+            }
         }
     }
 
@@ -33,12 +35,20 @@ public class CheckArmstrongNumber {
     }
 
     private int getNumberOfDigit(int number) {
+        return (int) Math.ceil(Math.log10(number));
+
+    }
+
+    private int getNumberOfDigitOld(int number) {
+        double log = Math.ceil(Math.log10(number));
+        System.out.println(log);
         int numberOfDigit = 0;
         for (int i = number; i > 0; i = i / 10) {
             numberOfDigit++;
         }
         return numberOfDigit;
     }
+
     private int power(int i1, int numberOfDigit) {
         PowerOfNumberRecursiveOptimization recursiveOptimization = new PowerOfNumberRecursiveOptimization();
         return recursiveOptimization.pow(numberOfDigit, i1).intValue();

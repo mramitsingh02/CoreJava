@@ -2,29 +2,32 @@ package com.tester.case1;
 
 public class CheckPalindromeNumber {
     public static void main(String[] args) {
-        int number = 1231;
+        int number = 121;
         CheckPalindromeNumber checkPalindromeNumber = new CheckPalindromeNumber();
         if (checkPalindromeNumber.check(number)) {
-            System.out.format("%d is palindrome number.", checkPalindromeNumber);
+            System.out.format("%d is palindrome number.", number);
         } else {
-            System.out.format("%d is not palindrome number.", checkPalindromeNumber);
+            System.out.format("%d is not palindrome number.", number);
         }
 
 
     }
 
-    public boolean check(int palindromeNumber) {
+    public boolean check(final int palindromeNumber) {
         int inputNumber = palindromeNumber;
 
         int newNumber = 0;
-        while (palindromeNumber != 0) {
-            int temp = palindromeNumber % 10;
+        while (inputNumber != 0) {
+            int temp = inputNumber % 10;
             newNumber = newNumber * 10 + temp;
-            palindromeNumber = palindromeNumber / 10;
+            inputNumber = inputNumber / 10;
         }
-        if (newNumber == inputNumber) {
+        if (newNumber == palindromeNumber) {
             return true;
         }
         return false;
     }
+
+
+
 }
