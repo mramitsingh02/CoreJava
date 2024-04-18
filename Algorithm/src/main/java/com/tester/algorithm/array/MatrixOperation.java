@@ -27,7 +27,7 @@ public class MatrixOperation {
     }
 
     public int[][] add(int[][] m1, int[][] m2, int xSize, int ySize) {
-        int sum[][] = new int[xSize][ySize];
+        int[][] sum = new int[xSize][ySize];
         for (int i = 0; i < xSize; i++) {
             for (int j = 0; j < ySize; j++) {
                 sum[i][j] = m1[i][j] + m2[i][j];
@@ -37,7 +37,7 @@ public class MatrixOperation {
     }
 
     public int[][] subtract(int[][] m1, int[][] m2, int xSize, int ySize) {
-        int sum[][] = new int[xSize][ySize];
+        int[][] sum = new int[xSize][ySize];
         for (int i = 0; i < xSize; i++) {
             for (int j = 0; j < ySize; j++) {
                 sum[i][j] = m1[i][j] - m2[i][j];
@@ -47,8 +47,8 @@ public class MatrixOperation {
     }
 
     public int[][] multiply(int[][] m1, int[][] m2, int xSize, int ySize) {
-        int multiple[][] = new int[xSize][ySize];
-        int sum[][] = new int[xSize][ySize];
+        int[][] multiple = new int[xSize][ySize];
+        int[][] sum = new int[xSize][ySize];
         for (int i = 0; i < xSize; i++) {
             for (int j = 0; j < ySize; j++) {
                 sum[i][j] = 0;

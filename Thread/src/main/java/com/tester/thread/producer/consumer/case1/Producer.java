@@ -18,8 +18,9 @@ public class Producer implements Runnable {
 
     @Override
     public void run() {
-        synchronized (stringList) {
-            while (true) {
+        while (true) {
+            synchronized (stringList) {
+
                 if (stringList.size() == MAX_SIZE) {
                     try {
                         System.out.println("Queue is Full, waiting for empty");

@@ -12,12 +12,12 @@ public class GenerateFactorialNumberOptimization {
     {
         cacheMap.put(0, BigInteger.ONE);
         cacheMap.put(1, BigInteger.ONE);
-        cacheMap.put(2, BigInteger.TWO);
+        cacheMap.put(2, BigInteger.valueOf(2));
     }
 
     public static void main(String[] args) {
         GenerateFactorialNumberOptimization factorialNumber = new GenerateFactorialNumberOptimization();
-        BigInteger bigInteger = factorialNumber.factorial(6);
+        BigInteger bigInteger = factorialNumber.factorial(1000);
         System.out.println(bigInteger.toString());
 
 

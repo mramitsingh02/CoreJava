@@ -41,8 +41,14 @@ public class LambdaCase1 {
                     '}';
         }
     }
+
     public static void main(String[] args) {
         fillPersonData();
+        List<Person> peopleNormal = LambdaCase1.people.stream().sorted(Comparator.comparing(Person::getName).thenComparingInt(Person::getAge)).collect(Collectors.toList());
+
+        peopleNormal.stream().map(Person::getName).forEach(System.out::println);
+        System.out.println("------------------>");
+
         List<Person> people = LambdaCase1.people.stream().sorted(Comparator.comparing(Person::getName).thenComparing(Person::getAge)).collect(Collectors.toList());
         people.forEach(System.out::println);
         System.out.println("------------------>");
@@ -54,6 +60,10 @@ public class LambdaCase1 {
         List<String> names3 = Arrays.asList("peter", null, "anna", "mike", null, "xenia");
         names3.sort(Comparator.nullsLast(String::compareTo).reversed());
         System.out.println(names3);
+
+        List<String> names4 = Arrays.asList("peter", null, "anna", "mike", null, "xenia");
+        names4.sort(Comparator.nullsFirst(String::compareTo));
+        System.out.println(names4);
 
 
 

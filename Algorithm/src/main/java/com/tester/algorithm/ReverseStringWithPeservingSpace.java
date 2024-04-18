@@ -4,6 +4,8 @@ public class ReverseStringWithPeservingSpace {
     public static void main(String[] args) {
         String name = "Amit Kumar Singh";
         String name2 = "hgni Sramu KtimA";
+        String name3 = "S&tr*i$n%g";
+
         char[] charName = name.toCharArray();
         System.out.println(String.valueOf(charName));
         for (int i = 0, j = charName.length-1; i < j; i++, j--) {

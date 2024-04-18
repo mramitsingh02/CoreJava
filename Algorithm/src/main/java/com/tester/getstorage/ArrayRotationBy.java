@@ -22,7 +22,7 @@ public class ArrayRotationBy {
         }
 
         int length = elements.length;
-        int backup[] = new int[byIndex];
+        int[] backup = new int[byIndex];
 
         for (int i = (length) - byIndex, j =0; j < backup.length; i++, j++) {
             backup[j] = elements[i];

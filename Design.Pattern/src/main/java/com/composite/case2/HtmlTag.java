@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.Objects;
 
 public abstract class HtmlTag implements Element {
-    private String name;
+    private final String name;
     private String value;
 
     public HtmlTag(String name) {

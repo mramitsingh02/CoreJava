@@ -11,6 +11,7 @@ public class CountDownLatchDemo {
         new Thread(new MyRunnable(countDownLatch)).start();
         new Thread(new MyRunnable(countDownLatch)).start();
         new Thread(new MyRunnable(countDownLatch)).start();
+        System.out.println("Waiting for 10s.");
         countDownLatch.await(10l, TimeUnit.SECONDS);
 
         System.out.println("Main-Done");
