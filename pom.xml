@@ -22,6 +22,7 @@
         <module>ImportentLink</module>
         <module>MemoryManagement</module>
         <module>Interview-Practice-2023</module>
+        <module>ProblemSolving</module>
     </modules>
 
     <properties>
