@@ -1,4 +1,4 @@
-package com.java8.stream.util;
+package org.example.util;
 
 public class Utils {
     public static void printHeader(String msg) {

@@ -4,24 +4,26 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>com.tester.corejava</groupId>
-        <artifactId>CoreJava</artifactId>
+        <groupId>org.example</groupId>
+        <artifactId>ProblemSolving</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <groupId>org.example</groupId>
-    <artifactId>ProblemSolving</artifactId>
-    <packaging>pom</packaging>
-    <modules>
-        <module>Java8.1</module>
-        <module>Java11</module>
-        <module>SlidingWindow</module>
-    </modules>
+    <artifactId>Java11</artifactId>
 
     <properties>
         <maven.compiler.source>21</maven.compiler.source>
         <maven.compiler.target>21</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+    <dependencies>
+
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>RELEASE</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
 
 </project>
